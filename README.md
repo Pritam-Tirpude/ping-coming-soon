@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Base Apparel Challenge Solution](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub/html-css-sass-flexbox-itX91R8lf)
-- Live Site URL: [Live Site](https://base-apparel-site.netlify.app/)
+- Solution URL: [Ping Coming Soon Challenge Solution](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub/html-css-sass-flexbox-TGqwcm0RH)
+- Live Site URL: [Live Site](https://ping-coming-soon-site.netlify.app/)
 
 ## My process
 
