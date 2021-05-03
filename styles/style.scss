@@ -121,6 +121,9 @@
 // Media query
 @media screen and (max-width: 900px) {
   .ping-container {
+    padding: 0rem 0rem;
+    width: 100vw;
+    box-shadow: none;
     @include flex(center, center, column);
 
     .logo {
@@ -132,7 +135,7 @@
       position: relative;
 
       h1 {
-        font-size: $header2;
+        font-size: $header3;
       }
       .notify {
         display: block;
@@ -151,8 +154,8 @@
       .error {
         @include flex(center, center, row);
         position: absolute;
-        top: 68%;
-        left: 30%;
+        top: 62%;
+        left: 20%;
         margin-top: 1rem;
       }
     }
@@ -168,6 +171,9 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
   .ping-container {
     @include flex(center, center, column);
+    padding: 0rem 0rem;
+    width: 100vw;
+    box-shadow: none;
 
     .logo {
       margin-top: 3rem;
@@ -210,5 +216,11 @@
     }
   }
 }
-// .attribution { font-size: 11px; text-align: center; }
-//     .attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(209, 33%, 12%);
+}
