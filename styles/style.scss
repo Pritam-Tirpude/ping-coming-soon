@@ -1,0 +1,214 @@
+@import "global";
+
+.main-container {
+  @include flex(center, center, column);
+  min-height: 100vh;
+}
+
+.ping-container {
+  @include flex(center, center, column);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 10rem;
+  width: 80vw;
+  box-shadow: 0px 10px 10px rgba(hsl(0, 0%, 0%), 0.3),
+    0px 20px 40px rgba(hsl(0, 0%, 0%), 0.3);
+
+  .sign-up-content {
+    margin-top: 3rem;
+    text-align: center;
+
+    h1 {
+      font-size: $header1;
+      color: $neutral_gray;
+      font-weight: lighter;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+
+    .soon {
+      color: $neutral_very_dark_blue;
+      font-weight: bold;
+    }
+
+    .notify {
+      @include flex(center, center, row);
+      margin-top: 3rem;
+
+      input {
+        width: 400px;
+        flex: 1 1 200rem;
+        padding: 2rem;
+        border: 1px solid $primary_pale_blue;
+        border-radius: 3rem;
+        font-family: "Libre Franklin", sans-serif;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        width: 100%;
+        margin-left: 2rem;
+        padding: 2rem 5rem;
+        border: none;
+        border-radius: 3rem;
+        cursor: pointer;
+        color: $neutral_white;
+        background-color: hsl(210, 71%, 48%);
+        box-shadow: 0px 10px 10px rgba(hsl(210, 71%, 48%), 0.2),
+          0px 20px 40px rgba(hsl(210, 71%, 48%), 0.2);
+        font-family: "Libre Franklin", sans-serif;
+        font-weight: bold;
+
+        &:hover {
+          filter: brightness(120%);
+        }
+      }
+    }
+
+    .error {
+      @include flex(flex-start, center, row);
+      font-style: italic;
+      font-size: small;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .illustration {
+    margin-top: 6rem;
+    img {
+      max-width: 45vw;
+      max-height: 100vh;
+    }
+  }
+
+  .social-section {
+    margin-top: 8rem;
+    @include flex(center, center, row);
+
+    a {
+      padding: 1rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      .fab {
+        color: hsl(210, 96%, 71%);
+      }
+
+      &:hover {
+        .fab {
+          color: hsl(210, 71%, 48%);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 2rem;
+    font-size: $header5;
+    color: $neutral_gray;
+  }
+}
+
+// Media query
+@media screen and (max-width: 900px) {
+  .ping-container {
+    @include flex(center, center, column);
+
+    .logo {
+      margin-top: 3rem;
+    }
+
+    .sign-up-content {
+      padding: 1rem 2rem;
+      position: relative;
+
+      h1 {
+        font-size: $header2;
+      }
+      .notify {
+        display: block;
+
+        input {
+          width: 80vw;
+        }
+
+        button {
+          margin: 0rem;
+          margin-top: 3rem;
+          width: 80vw;
+        }
+      }
+
+      .error {
+        @include flex(center, center, row);
+        position: absolute;
+        top: 68%;
+        left: 30%;
+        margin-top: 1rem;
+      }
+    }
+    .illustration {
+      img {
+        max-width: 80vw;
+        max-height: 100vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
+  .ping-container {
+    @include flex(center, center, column);
+
+    .logo {
+      margin-top: 3rem;
+    }
+
+    .sign-up-content {
+      padding: 1rem 2rem;
+      position: relative;
+
+      h1 {
+        font-size: $header2;
+      }
+      .notify {
+        display: block;
+
+        input {
+          width: 80vw;
+        }
+
+        button {
+          margin: 0rem;
+          margin-top: 3rem;
+          width: 80vw;
+        }
+      }
+
+      .error {
+        @include flex(center, center, row);
+        position: absolute;
+        top: 64%;
+        left: 30%;
+        margin-top: 1rem;
+      }
+    }
+    .illustration {
+      img {
+        max-width: 80vw;
+        max-height: 100vh;
+      }
+    }
+  }
+}
+// .attribution { font-size: 11px; text-align: center; }
+//     .attribution a { color: hsl(228, 45%, 44%); }

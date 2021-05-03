@@ -1,0 +1,323 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.ping-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 10rem;
+  width: 80vw;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.ping-container .sign-up-content {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.ping-container .sign-up-content h1 {
+  font-size: 4rem;
+  color: #969696;
+  font-weight: lighter;
+}
+
+.ping-container .sign-up-content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.ping-container .sign-up-content .soon {
+  color: #151f29;
+  font-weight: bold;
+}
+
+.ping-container .sign-up-content .notify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3rem;
+}
+
+.ping-container .sign-up-content .notify input {
+  width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200rem;
+          flex: 1 1 200rem;
+  padding: 2rem;
+  border: 1px solid #c2d3ff;
+  border-radius: 3rem;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.ping-container .sign-up-content .notify input:focus {
+  outline: none;
+}
+
+.ping-container .sign-up-content .notify button {
+  width: 100%;
+  margin-left: 2rem;
+  padding: 2rem 5rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  color: white;
+  background-color: #237ad1;
+  -webkit-box-shadow: 0px 10px 10px rgba(35, 122, 209, 0.2), 0px 20px 40px rgba(35, 122, 209, 0.2);
+          box-shadow: 0px 10px 10px rgba(35, 122, 209, 0.2), 0px 20px 40px rgba(35, 122, 209, 0.2);
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+}
+
+.ping-container .sign-up-content .notify button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.ping-container .sign-up-content .error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-style: italic;
+  font-size: small;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.ping-container .illustration {
+  margin-top: 6rem;
+}
+
+.ping-container .illustration img {
+  max-width: 45vw;
+  max-height: 100vh;
+}
+
+.ping-container .social-section {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ping-container .social-section a {
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ping-container .social-section a .fab {
+  color: #6eb5fc;
+}
+
+.ping-container .social-section a:hover .fab {
+  color: #237ad1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ping-container .copyright {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #969696;
+}
+
+@media screen and (max-width: 900px) {
+  .ping-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ping-container .logo {
+    margin-top: 3rem;
+  }
+  .ping-container .sign-up-content {
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  .ping-container .sign-up-content h1 {
+    font-size: 3.5rem;
+  }
+  .ping-container .sign-up-content .notify {
+    display: block;
+  }
+  .ping-container .sign-up-content .notify input {
+    width: 80vw;
+  }
+  .ping-container .sign-up-content .notify button {
+    margin: 0rem;
+    margin-top: 3rem;
+    width: 80vw;
+  }
+  .ping-container .sign-up-content .error {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: 68%;
+    left: 30%;
+    margin-top: 1rem;
+  }
+  .ping-container .illustration img {
+    max-width: 80vw;
+    max-height: 100vh;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
+  .ping-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ping-container .logo {
+    margin-top: 3rem;
+  }
+  .ping-container .sign-up-content {
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  .ping-container .sign-up-content h1 {
+    font-size: 3.5rem;
+  }
+  .ping-container .sign-up-content .notify {
+    display: block;
+  }
+  .ping-container .sign-up-content .notify input {
+    width: 80vw;
+  }
+  .ping-container .sign-up-content .notify button {
+    margin: 0rem;
+    margin-top: 3rem;
+    width: 80vw;
+  }
+  .ping-container .sign-up-content .error {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: 64%;
+    left: 30%;
+    margin-top: 1rem;
+  }
+  .ping-container .illustration img {
+    max-width: 80vw;
+    max-height: 100vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
